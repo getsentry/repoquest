@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T02:46:07.815Z",
+  "lastUpdated": "2026-02-19T13:00:37.781Z",
   "orgName": "getsentry",
   "repositories": [
     {
@@ -7,7 +7,7 @@
       "slug": "sentry",
       "description": "Developer-first error tracking and performance monitoring",
       "url": "https://github.com/getsentry/sentry",
-      "stars": 43167,
+      "stars": 43173,
       "language": "Python",
       "skills": {
         "aiConfig": {
@@ -153,11 +153,181 @@
       ]
     },
     {
+      "name": "sentry-java",
+      "slug": "sentry-java",
+      "description": "A Sentry SDK for Java, Android and other JVM languages.",
+      "url": "https://github.com/getsentry/sentry-java",
+      "stars": 1296,
+      "language": "Kotlin",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": true
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 13,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 4,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Heroic",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "MIGRATION.md",
+          "classification": "docs"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-cocoa",
+      "slug": "sentry-cocoa",
+      "description": "The official Sentry SDK for iOS, tvOS, macOS, watchOS, iPadOS and visionOS.",
+      "url": "https://github.com/getsentry/sentry-cocoa",
+      "stars": 1025,
+      "language": "Swift",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": true,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
+          "formatter": true,
+          "preCommitHooks": true,
+          "testInfra": false
+        }
+      },
+      "skillCount": 13,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 4,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Heroic",
+      "markdownFiles": [
+        {
+          "path": "AGENTS.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "LICENSE.md",
+          "classification": "other"
+        },
+        {
+          "path": "MIGRATION.md",
+          "classification": "docs"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "classification": "docs"
+        },
+        {
+          "path": "docs/opaque-masking.md",
+          "classification": "docs"
+        }
+      ]
+    },
+    {
       "name": "sentry-javascript",
       "slug": "sentry-javascript",
       "description": "Official Sentry SDKs for JavaScript",
       "url": "https://github.com/getsentry/sentry-javascript",
-      "stars": 8585,
+      "stars": 8586,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -286,12 +456,12 @@
       ]
     },
     {
-      "name": "sentry-cocoa",
-      "slug": "sentry-cocoa",
-      "description": "The official Sentry SDK for iOS, tvOS, macOS, watchOS, iPadOS and visionOS.",
-      "url": "https://github.com/getsentry/sentry-cocoa",
-      "stars": 1025,
-      "language": "Swift",
+      "name": "sentry-react-native",
+      "slug": "sentry-react-native",
+      "description": "Official Sentry SDK for React Native",
+      "url": "https://github.com/getsentry/sentry-react-native",
+      "stars": 1765,
+      "language": "TypeScript",
       "skills": {
         "aiConfig": {
           "agentsMd": true,
@@ -303,7 +473,7 @@
           "cursorRulesDir": false
         },
         "buildVerify": {
-          "makefile": true,
+          "makefile": false,
           "ciWorkflows": true
         },
         "documentation": {
@@ -313,10 +483,10 @@
         },
         "codeQuality": {
           "typeChecking": true,
-          "linter": false,
+          "linter": true,
           "formatter": true,
-          "preCommitHooks": true,
-          "testInfra": false
+          "preCommitHooks": false,
+          "testInfra": true
         }
       },
       "skillCount": 12,
@@ -326,7 +496,7 @@
           "total": 7
         },
         "buildVerify": {
-          "earned": 2,
+          "earned": 1,
           "total": 2
         },
         "documentation": {
@@ -334,7 +504,92 @@
           "total": 3
         },
         "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Elite",
+      "markdownFiles": [
+        {
+          "path": "AGENTS.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CI.md",
+          "classification": "docs"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "LICENSE.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-dart",
+      "slug": "sentry-dart",
+      "description": "Sentry SDK for Dart and Flutter",
+      "url": "https://github.com/getsentry/sentry-dart",
+      "stars": 856,
+      "language": "Dart",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": true,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 12,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 4,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
           "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
           "total": 5
         }
       },
@@ -357,23 +612,15 @@
           "classification": "contributing"
         },
         {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "MIGRATION.md",
-          "classification": "docs"
-        },
-        {
           "path": "README.md",
           "classification": "readme"
         },
         {
-          "path": "THIRD_PARTY_NOTICES.md",
+          "path": "docs/new-package-release-checklist.md",
           "classification": "docs"
         },
         {
-          "path": "docs/opaque-masking.md",
+          "path": "docs/sdk-versions.md",
           "classification": "docs"
         }
       ]
@@ -460,7 +707,7 @@
       "slug": "xcodebuildmcp",
       "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
       "url": "https://github.com/getsentry/XcodeBuildMCP",
-      "stars": 4350,
+      "stars": 4354,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -609,101 +856,16 @@
       ]
     },
     {
-      "name": "sentry-react-native",
-      "slug": "sentry-react-native",
-      "description": "Official Sentry SDK for React Native",
-      "url": "https://github.com/getsentry/sentry-react-native",
-      "stars": 1764,
-      "language": "TypeScript",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": true,
-          "claudeMd": true,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": true,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 10,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 4,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 3,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 2,
-          "total": 5
-        }
-      },
-      "level": "Elite",
-      "markdownFiles": [
-        {
-          "path": "AGENTS.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CI.md",
-          "classification": "docs"
-        },
-        {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-java",
-      "slug": "sentry-java",
-      "description": "A Sentry SDK for Java, Android and other JVM languages.",
-      "url": "https://github.com/getsentry/sentry-java",
-      "stars": 1296,
-      "language": "Kotlin",
+      "name": "sentry-python",
+      "slug": "sentry-python",
+      "description": "The official Python SDK for Sentry.io",
+      "url": "https://github.com/getsentry/sentry-python",
+      "stars": 2140,
+      "language": "Python",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
-          "claudeMd": true,
+          "claudeMd": false,
           "claudeDir": true,
           "claudeSettings": true,
           "claudeCommands": false,
@@ -722,15 +884,15 @@
         "codeQuality": {
           "typeChecking": false,
           "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
         }
       },
       "skillCount": 10,
       "categoryScores": {
         "aiConfig": {
-          "earned": 4,
+          "earned": 3,
           "total": 7
         },
         "buildVerify": {
@@ -742,12 +904,89 @@
           "total": 3
         },
         "codeQuality": {
-          "earned": 1,
+          "earned": 2,
           "total": 5
         }
       },
       "level": "Elite",
       "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "MIGRATION_GUIDE.md",
+          "classification": "docs"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-cli",
+      "slug": "sentry-cli",
+      "description": "A command line utility to work with Sentry.",
+      "url": "https://github.com/getsentry/sentry-cli",
+      "stars": 978,
+      "language": "Rust",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": true,
+          "claudeMd": true,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 10,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 2,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Elite",
+      "markdownFiles": [
+        {
+          "path": "AGENTS.md",
+          "classification": "ai-config"
+        },
         {
           "path": "CHANGELOG.md",
           "classification": "other"
@@ -761,11 +1000,19 @@
           "classification": "contributing"
         },
         {
-          "path": "MIGRATION.md",
+          "path": "README.md",
+          "classification": "readme"
+        },
+        {
+          "path": "VERSIONING.md",
           "classification": "docs"
         },
         {
-          "path": "README.md",
+          "path": "docs/AGENTS.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "docs/README.md",
           "classification": "readme"
         }
       ]
@@ -1005,79 +1252,6 @@
       ]
     },
     {
-      "name": "sentry-python",
-      "slug": "sentry-python",
-      "description": "The official Python SDK for Sentry.io",
-      "url": "https://github.com/getsentry/sentry-python",
-      "stars": 2140,
-      "language": "Python",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": true
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": true,
-          "testInfra": false
-        }
-      },
-      "skillCount": 9,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 3,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 3,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Veteran",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "MIGRATION_GUIDE.md",
-          "classification": "docs"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
       "name": "sentry-go",
       "slug": "sentry-go",
       "description": "The official Go SDK for Sentry (sentry.io)",
@@ -1151,16 +1325,166 @@
       ]
     },
     {
-      "name": "sentry-cli",
-      "slug": "sentry-cli",
-      "description": "A command line utility to work with Sentry.",
-      "url": "https://github.com/getsentry/sentry-cli",
-      "stars": 978,
-      "language": "Rust",
+      "name": "sentry-godot",
+      "slug": "sentry-godot",
+      "description": "Sentry SDK for Godot Game Engine",
+      "url": "https://github.com/getsentry/sentry-godot",
+      "stars": 200,
+      "language": "C++",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 9,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 2,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "LICENSE.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-kotlin-multiplatform",
+      "slug": "sentry-kotlin-multiplatform",
+      "description": "Sentry SDK for Kotlin Multiplatform",
+      "url": "https://github.com/getsentry/sentry-kotlin-multiplatform",
+      "stars": 187,
+      "language": "Kotlin",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 9,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 3,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "AGENTS.MD",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "craft",
+      "slug": "craft",
+      "description": "The universal Sentry release CLI  🚀",
+      "url": "https://github.com/getsentry/craft",
+      "stars": 168,
+      "language": "TypeScript",
       "skills": {
         "aiConfig": {
           "agentsMd": true,
-          "claudeMd": true,
+          "claudeMd": false,
           "claudeDir": false,
           "claudeSettings": false,
           "claudeCommands": false,
@@ -1178,7 +1502,84 @@
         },
         "codeQuality": {
           "typeChecking": true,
-          "linter": false,
+          "linter": true,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 9,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 1,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 4,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "AGENTS.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        },
+        {
+          "path": "blog-post-draft.md",
+          "classification": "docs"
+        }
+      ]
+    },
+    {
+      "name": "sentry-capacitor",
+      "slug": "sentry-capacitor",
+      "description": "The official Sentry SDK for Capacitor",
+      "url": "https://github.com/getsentry/sentry-capacitor",
+      "stars": 145,
+      "language": "TypeScript",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
           "formatter": true,
           "preCommitHooks": false,
           "testInfra": true
@@ -1195,116 +1596,19 @@
           "total": 2
         },
         "documentation": {
-          "earned": 3,
+          "earned": 2,
           "total": 3
         },
         "codeQuality": {
-          "earned": 3,
-          "total": 5
-        }
-      },
-      "level": "Veteran",
-      "markdownFiles": [
-        {
-          "path": "AGENTS.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        },
-        {
-          "path": "VERSIONING.md",
-          "classification": "docs"
-        },
-        {
-          "path": "docs/AGENTS.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "docs/README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-dart",
-      "slug": "sentry-dart",
-      "description": "Sentry SDK for Dart and Flutter",
-      "url": "https://github.com/getsentry/sentry-dart",
-      "stars": 856,
-      "language": "Dart",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": true,
-          "claudeMd": true,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 8,
-      "categoryScores": {
-        "aiConfig": {
           "earned": 4,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 3,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 0,
           "total": 5
         }
       },
       "level": "Veteran",
       "markdownFiles": [
         {
-          "path": "AGENTS.md",
-          "classification": "ai-config"
-        },
-        {
           "path": "CHANGELOG.md",
           "classification": "other"
-        },
-        {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
         },
         {
           "path": "CONTRIBUTING.md",
@@ -1313,14 +1617,6 @@
         {
           "path": "README.md",
           "classification": "readme"
-        },
-        {
-          "path": "docs/new-package-release-checklist.md",
-          "classification": "docs"
-        },
-        {
-          "path": "docs/sdk-versions.md",
-          "classification": "docs"
         }
       ]
     },
@@ -1379,6 +1675,75 @@
       },
       "level": "Veteran",
       "markdownFiles": [
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-native",
+      "slug": "sentry-native",
+      "description": "Sentry SDK for C, C++ and native applications.",
+      "url": "https://github.com/getsentry/sentry-native",
+      "stars": 520,
+      "language": "C",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 8,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 2,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
         {
           "path": "README.md",
           "classification": "readme"
@@ -1536,18 +1901,18 @@
       ]
     },
     {
-      "name": "craft",
-      "slug": "craft",
-      "description": "The universal Sentry release CLI  🚀",
-      "url": "https://github.com/getsentry/craft",
-      "stars": 168,
-      "language": "TypeScript",
+      "name": "sentry-unity",
+      "slug": "sentry-unity",
+      "description": "Development of Sentry SDK for Unity",
+      "url": "https://github.com/getsentry/sentry-unity",
+      "stars": 264,
+      "language": "C#",
       "skills": {
         "aiConfig": {
-          "agentsMd": true,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
+          "agentsMd": false,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
           "claudeCommands": false,
           "claudeSkills": false,
           "cursorRulesDir": false
@@ -1559,20 +1924,20 @@
         "documentation": {
           "readme": true,
           "contributing": true,
-          "additionalDocs": true
+          "additionalDocs": false
         },
         "codeQuality": {
-          "typeChecking": true,
-          "linter": true,
+          "typeChecking": false,
+          "linter": false,
           "formatter": true,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
       "skillCount": 8,
       "categoryScores": {
         "aiConfig": {
-          "earned": 1,
+          "earned": 3,
           "total": 7
         },
         "buildVerify": {
@@ -1580,45 +1945,45 @@
           "total": 2
         },
         "documentation": {
-          "earned": 3,
+          "earned": 2,
           "total": 3
         },
         "codeQuality": {
-          "earned": 3,
+          "earned": 2,
           "total": 5
         }
       },
       "level": "Veteran",
       "markdownFiles": [
         {
-          "path": "AGENTS.md",
-          "classification": "ai-config"
-        },
-        {
           "path": "CHANGELOG.md",
           "classification": "other"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
         },
         {
           "path": "CONTRIBUTING.md",
           "classification": "contributing"
         },
         {
-          "path": "README.md",
-          "classification": "readme"
+          "path": "LICENSE.md",
+          "classification": "other"
         },
         {
-          "path": "blog-post-draft.md",
-          "classification": "docs"
+          "path": "README.md",
+          "classification": "readme"
         }
       ]
     },
     {
-      "name": "sentry-capacitor",
-      "slug": "sentry-capacitor",
-      "description": "The official Sentry SDK for Capacitor",
-      "url": "https://github.com/getsentry/sentry-capacitor",
-      "stars": 145,
-      "language": "TypeScript",
+      "name": "sentry-dotnet",
+      "slug": "sentry-dotnet",
+      "description": "Sentry SDK for .NET",
+      "url": "https://github.com/getsentry/sentry-dotnet",
+      "stars": 740,
+      "language": "C#",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
@@ -1639,14 +2004,14 @@
           "additionalDocs": false
         },
         "codeQuality": {
-          "typeChecking": true,
-          "linter": true,
+          "typeChecking": false,
+          "linter": false,
           "formatter": true,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
-      "skillCount": 8,
+      "skillCount": 7,
       "categoryScores": {
         "aiConfig": {
           "earned": 2,
@@ -1661,7 +2026,7 @@
           "total": 3
         },
         "codeQuality": {
-          "earned": 3,
+          "earned": 2,
           "total": 5
         }
       },
@@ -1763,6 +2128,75 @@
       ]
     },
     {
+      "name": "sentry-rust",
+      "slug": "sentry-rust",
+      "description": "The official Sentry SDK for Rust",
+      "url": "https://github.com/getsentry/sentry-rust",
+      "stars": 706,
+      "language": "Rust",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": true,
+          "claudeDir": true,
+          "claudeSettings": true,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 7,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 3,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
       "name": "spotlight",
       "slug": "spotlight",
       "description": "Sentry for Development",
@@ -1832,237 +2266,18 @@
       ]
     },
     {
-      "name": "sentry-native",
-      "slug": "sentry-native",
-      "description": "Sentry SDK for C, C++ and native applications.",
-      "url": "https://github.com/getsentry/sentry-native",
-      "stars": 520,
-      "language": "C",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 7,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 2,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Veteran",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-unity",
-      "slug": "sentry-unity",
-      "description": "Development of Sentry SDK for Unity",
-      "url": "https://github.com/getsentry/sentry-unity",
-      "stars": 264,
-      "language": "C#",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": true,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 7,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 3,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Veteran",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-godot",
-      "slug": "sentry-godot",
-      "description": "Sentry SDK for Godot Game Engine",
-      "url": "https://github.com/getsentry/sentry-godot",
-      "stars": 200,
-      "language": "C++",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": true,
-          "claudeSettings": true,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": true,
-          "testInfra": false
-        }
-      },
-      "skillCount": 7,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 2,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 2,
-          "total": 5
-        }
-      },
-      "level": "Veteran",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-kotlin-multiplatform",
-      "slug": "sentry-kotlin-multiplatform",
-      "description": "Sentry SDK for Kotlin Multiplatform",
-      "url": "https://github.com/getsentry/sentry-kotlin-multiplatform",
-      "stars": 187,
+      "name": "sentry-android-gradle-plugin",
+      "slug": "sentry-android-gradle-plugin",
+      "description": "Gradle plugin for Sentry Android. Upload proguard, debug files, and more.",
+      "url": "https://github.com/getsentry/sentry-android-gradle-plugin",
+      "stars": 173,
       "language": "Kotlin",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
-          "claudeMd": true,
-          "claudeDir": true,
-          "claudeSettings": true,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
           "claudeCommands": false,
           "claudeSkills": false,
           "cursorRulesDir": false
@@ -2077,17 +2292,17 @@
           "additionalDocs": false
         },
         "codeQuality": {
-          "typeChecking": false,
+          "typeChecking": true,
           "linter": false,
-          "formatter": false,
+          "formatter": true,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
       "skillCount": 7,
       "categoryScores": {
         "aiConfig": {
-          "earned": 3,
+          "earned": 0,
           "total": 7
         },
         "buildVerify": {
@@ -2099,23 +2314,15 @@
           "total": 3
         },
         "codeQuality": {
-          "earned": 0,
+          "earned": 3,
           "total": 5
         }
       },
       "level": "Veteran",
       "markdownFiles": [
         {
-          "path": "AGENTS.MD",
-          "classification": "ai-config"
-        },
-        {
           "path": "CHANGELOG.md",
           "classification": "other"
-        },
-        {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
         },
         {
           "path": "CONTRIBUTING.md",
@@ -2201,12 +2408,222 @@
       ]
     },
     {
-      "name": "sentry-dotnet",
-      "slug": "sentry-dotnet",
-      "description": "Sentry SDK for .NET",
-      "url": "https://github.com/getsentry/sentry-dotnet",
-      "stars": 740,
-      "language": "C#",
+      "name": "self-hosted",
+      "slug": "self-hosted",
+      "description": "Sentry, feature-complete and packaged up for low-volume deployments and proofs-of-concept",
+      "url": "https://github.com/getsentry/self-hosted",
+      "stars": 9165,
+      "language": "Shell",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 3,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "LICENSE.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "responses",
+      "slug": "responses",
+      "description": "A utility for mocking out the Python Requests library.",
+      "url": "https://github.com/getsentry/responses",
+      "stars": 4322,
+      "language": "Python",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 3,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": []
+    },
+    {
+      "name": "sentry-php",
+      "slug": "sentry-php",
+      "description": "The official PHP SDK for Sentry (sentry.io)",
+      "url": "https://github.com/getsentry/sentry-php",
+      "stars": 1899,
+      "language": "PHP",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": true,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 3,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        },
+        {
+          "path": "UPGRADE-2.0.md",
+          "classification": "docs"
+        },
+        {
+          "path": "UPGRADE-3.0.md",
+          "classification": "docs"
+        },
+        {
+          "path": "UPGRADE-4.0.md",
+          "classification": "docs"
+        }
+      ]
+    },
+    {
+      "name": "sentry-elixir",
+      "slug": "sentry-elixir",
+      "description": "The official Elixir SDK for Sentry (sentry.io)",
+      "url": "https://github.com/getsentry/sentry-elixir",
+      "stars": 676,
+      "language": "Elixir",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
@@ -2229,9 +2646,9 @@
         "codeQuality": {
           "typeChecking": false,
           "linter": false,
-          "formatter": true,
+          "formatter": false,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
       "skillCount": 6,
@@ -2264,49 +2681,53 @@
           "classification": "contributing"
         },
         {
+          "path": "ISSUE_TEMPLATE.md",
+          "classification": "other"
+        },
+        {
           "path": "README.md",
           "classification": "readme"
         }
       ]
     },
     {
-      "name": "sentry-rust",
-      "slug": "sentry-rust",
-      "description": "The official Sentry SDK for Rust",
-      "url": "https://github.com/getsentry/sentry-rust",
-      "stars": 706,
-      "language": "Rust",
+      "name": "raven-node",
+      "slug": "raven-node",
+      "description": "A standalone (Node.js) client for Sentry",
+      "url": "https://github.com/getsentry/raven-node",
+      "stars": 454,
+      "language": "JavaScript",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
-          "claudeMd": true,
-          "claudeDir": true,
-          "claudeSettings": true,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
           "claudeCommands": false,
           "claudeSkills": false,
           "cursorRulesDir": false
         },
         "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
+          "makefile": true,
+          "ciWorkflows": false
         },
         "documentation": {
           "readme": true,
-          "contributing": false,
-          "additionalDocs": false
+          "contributing": true,
+          "additionalDocs": true
         },
         "codeQuality": {
           "typeChecking": false,
-          "linter": false,
-          "formatter": true,
+          "linter": true,
+          "formatter": false,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
       "skillCount": 6,
       "categoryScores": {
         "aiConfig": {
-          "earned": 3,
+          "earned": 0,
           "total": 7
         },
         "buildVerify": {
@@ -2314,11 +2735,80 @@
           "total": 2
         },
         "documentation": {
-          "earned": 1,
+          "earned": 3,
           "total": 3
         },
         "codeQuality": {
-          "earned": 1,
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CONTRIBUTING.md",
+          "classification": "contributing"
+        },
+        {
+          "path": "History.md",
+          "classification": "docs"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "symbolicator",
+      "slug": "symbolicator",
+      "description": "Native Symbolication as a Service",
+      "url": "https://github.com/getsentry/symbolicator",
+      "stars": 410,
+      "language": "Rust",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
           "total": 5
         }
       },
@@ -2329,12 +2819,16 @@
           "classification": "other"
         },
         {
-          "path": "CLAUDE.md",
-          "classification": "ai-config"
+          "path": "LICENSE.md",
+          "classification": "other"
         },
         {
           "path": "README.md",
           "classification": "readme"
+        },
+        {
+          "path": "docs/index.md",
+          "classification": "docs"
         }
       ]
     },
@@ -2400,6 +2894,75 @@
         {
           "path": "LICENSE.md",
           "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "sentry-electron",
+      "slug": "sentry-electron",
+      "description": "The official Sentry SDK for Electron",
+      "url": "https://github.com/getsentry/sentry-electron",
+      "stars": 253,
+      "language": "TypeScript",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": true,
+          "formatter": false,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 3,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "MIGRATION.md",
+          "classification": "docs"
         },
         {
           "path": "README.md",
@@ -2558,216 +3121,6 @@
       ]
     },
     {
-      "name": "self-hosted",
-      "slug": "self-hosted",
-      "description": "Sentry, feature-complete and packaged up for low-volume deployments and proofs-of-concept",
-      "url": "https://github.com/getsentry/self-hosted",
-      "stars": 9166,
-      "language": "Shell",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": true,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 2,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "responses",
-      "slug": "responses",
-      "description": "A utility for mocking out the Python Requests library.",
-      "url": "https://github.com/getsentry/responses",
-      "stars": 4321,
-      "language": "Python",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": true,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": true,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 1,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 2,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": []
-    },
-    {
-      "name": "sentry-php",
-      "slug": "sentry-php",
-      "description": "The official PHP SDK for Sentry (sentry.io)",
-      "url": "https://github.com/getsentry/sentry-php",
-      "stars": 1899,
-      "language": "PHP",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 3,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        },
-        {
-          "path": "UPGRADE-2.0.md",
-          "classification": "docs"
-        },
-        {
-          "path": "UPGRADE-3.0.md",
-          "classification": "docs"
-        },
-        {
-          "path": "UPGRADE-4.0.md",
-          "classification": "docs"
-        }
-      ]
-    },
-    {
       "name": "sentry-laravel",
       "slug": "sentry-laravel",
       "description": "The official Laravel SDK for Sentry (sentry.io)",
@@ -2914,18 +3267,18 @@
       ]
     },
     {
-      "name": "sentry-elixir",
-      "slug": "sentry-elixir",
-      "description": "The official Elixir SDK for Sentry (sentry.io)",
-      "url": "https://github.com/getsentry/sentry-elixir",
-      "stars": 676,
-      "language": "Elixir",
+      "name": "sentry-webpack-plugin",
+      "slug": "sentry-webpack-plugin",
+      "description": "Repo moved to https://github.com/getsentry/sentry-javascript-bundler-plugins. Please open any issues/PRs there.",
+      "url": "https://github.com/getsentry/sentry-webpack-plugin",
+      "stars": 663,
+      "language": "JavaScript",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
           "claudeMd": false,
-          "claudeDir": true,
-          "claudeSettings": true,
+          "claudeDir": false,
+          "claudeSettings": false,
           "claudeCommands": false,
           "claudeSkills": false,
           "cursorRulesDir": false
@@ -2936,21 +3289,21 @@
         },
         "documentation": {
           "readme": true,
-          "contributing": true,
+          "contributing": false,
           "additionalDocs": false
         },
         "codeQuality": {
           "typeChecking": false,
-          "linter": false,
-          "formatter": false,
+          "linter": true,
+          "formatter": true,
           "preCommitHooks": false,
-          "testInfra": false
+          "testInfra": true
         }
       },
       "skillCount": 5,
       "categoryScores": {
         "aiConfig": {
-          "earned": 2,
+          "earned": 0,
           "total": 7
         },
         "buildVerify": {
@@ -2958,11 +3311,11 @@
           "total": 2
         },
         "documentation": {
-          "earned": 2,
+          "earned": 1,
           "total": 3
         },
         "codeQuality": {
-          "earned": 0,
+          "earned": 3,
           "total": 5
         }
       },
@@ -2973,11 +3326,68 @@
           "classification": "other"
         },
         {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "symbolic",
+      "slug": "symbolic",
+      "description": "Stack trace symbolication library written in Rust",
+      "url": "https://github.com/getsentry/symbolic",
+      "stars": 525,
+      "language": "Rust",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
         },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": true,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 5,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
         {
-          "path": "ISSUE_TEMPLATE.md",
+          "path": "CHANGELOG.md",
           "classification": "other"
         },
         {
@@ -3041,148 +3451,6 @@
       },
       "level": "Apprentice",
       "markdownFiles": [
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "symbolicator",
-      "slug": "symbolicator",
-      "description": "Native Symbolication as a Service",
-      "url": "https://github.com/getsentry/symbolicator",
-      "stars": 410,
-      "language": "Rust",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": true,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "LICENSE.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        },
-        {
-          "path": "docs/index.md",
-          "classification": "docs"
-        }
-      ]
-    },
-    {
-      "name": "sentry-electron",
-      "slug": "sentry-electron",
-      "description": "The official Sentry SDK for Electron",
-      "url": "https://github.com/getsentry/sentry-electron",
-      "stars": 253,
-      "language": "TypeScript",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": true,
-          "linter": true,
-          "formatter": false,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 2,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "MIGRATION.md",
-          "classification": "docs"
-        },
         {
           "path": "README.md",
           "classification": "readme"
@@ -3368,81 +3636,12 @@
       ]
     },
     {
-      "name": "sentry-android-gradle-plugin",
-      "slug": "sentry-android-gradle-plugin",
-      "description": "Gradle plugin for Sentry Android. Upload proguard, debug files, and more.",
-      "url": "https://github.com/getsentry/sentry-android-gradle-plugin",
-      "stars": 173,
-      "language": "Kotlin",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 5,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 2,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "sentry-webpack-plugin",
-      "slug": "sentry-webpack-plugin",
-      "description": "Repo moved to https://github.com/getsentry/sentry-javascript-bundler-plugins. Please open any issues/PRs there.",
-      "url": "https://github.com/getsentry/sentry-webpack-plugin",
-      "stars": 663,
-      "language": "JavaScript",
+      "name": "pdb",
+      "slug": "pdb",
+      "description": "A parser for Microsoft PDB (Program Database) debugging information",
+      "url": "https://github.com/getsentry/pdb",
+      "stars": 459,
+      "language": "Rust",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
@@ -3491,144 +3690,6 @@
       },
       "level": "Apprentice",
       "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "symbolic",
-      "slug": "symbolic",
-      "description": "Stack trace symbolication library written in Rust",
-      "url": "https://github.com/getsentry/symbolic",
-      "stars": 525,
-      "language": "Rust",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 4,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 1,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "raven-node",
-      "slug": "raven-node",
-      "description": "A standalone (Node.js) client for Sentry",
-      "url": "https://github.com/getsentry/raven-node",
-      "stars": 454,
-      "language": "JavaScript",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": false
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": true,
-          "additionalDocs": true
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 4,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 3,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 0,
-          "total": 5
-        }
-      },
-      "level": "Apprentice",
-      "markdownFiles": [
-        {
-          "path": "CONTRIBUTING.md",
-          "classification": "contributing"
-        },
-        {
-          "path": "History.md",
-          "classification": "docs"
-        },
         {
           "path": "README.md",
           "classification": "readme"
@@ -3690,6 +3751,71 @@
       },
       "level": "Apprentice",
       "markdownFiles": [
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "rust-sourcemap",
+      "slug": "rust-sourcemap",
+      "description": "A library for rust that implements basic sourcemap handling",
+      "url": "https://github.com/getsentry/rust-sourcemap",
+      "stars": 245,
+      "language": "Rust",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": false,
+          "testInfra": true
+        }
+      },
+      "skillCount": 4,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 1,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
         {
           "path": "README.md",
           "classification": "readme"
@@ -3896,6 +4022,71 @@
       ]
     },
     {
+      "name": "sentry-clj",
+      "slug": "sentry-clj",
+      "description": "Sentry SDK for Clojure",
+      "url": "https://github.com/getsentry/sentry-clj",
+      "stars": 118,
+      "language": "Clojure",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 4,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
       "name": "raven-python",
       "slug": "raven-python",
       "description": "Raven is the legacy Python client for Sentry (getsentry.com) — replaced by sentry-python",
@@ -4018,132 +4209,6 @@
       ]
     },
     {
-      "name": "pdb",
-      "slug": "pdb",
-      "description": "A parser for Microsoft PDB (Program Database) debugging information",
-      "url": "https://github.com/getsentry/pdb",
-      "stars": 459,
-      "language": "Rust",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": true,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 3,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 1,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 1,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 1,
-          "total": 5
-        }
-      },
-      "level": "Novice",
-      "markdownFiles": [
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "rust-sourcemap",
-      "slug": "rust-sourcemap",
-      "description": "A library for rust that implements basic sourcemap handling",
-      "url": "https://github.com/getsentry/rust-sourcemap",
-      "stars": 245,
-      "language": "Rust",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": true,
-          "ciWorkflows": true
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 3,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 2,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 1,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 0,
-          "total": 5
-        }
-      },
-      "level": "Novice",
-      "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
       "name": "sentry-slack",
       "slug": "sentry-slack",
       "description": "DEPRECATED Slack integration for Sentry",
@@ -4200,12 +4265,12 @@
       "markdownFiles": []
     },
     {
-      "name": "sentry-clj",
-      "slug": "sentry-clj",
-      "description": "Sentry SDK for Clojure",
-      "url": "https://github.com/getsentry/sentry-clj",
-      "stars": 117,
-      "language": "Clojure",
+      "name": "docker-sentry",
+      "slug": "docker-sentry",
+      "description": "Docker Official Image packaging for Sentry",
+      "url": "https://github.com/getsentry/docker-sentry",
+      "stars": 347,
+      "language": "Python",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
@@ -4218,7 +4283,7 @@
         },
         "buildVerify": {
           "makefile": false,
-          "ciWorkflows": true
+          "ciWorkflows": false
         },
         "documentation": {
           "readme": true,
@@ -4229,18 +4294,18 @@
           "typeChecking": false,
           "linter": false,
           "formatter": false,
-          "preCommitHooks": true,
-          "testInfra": false
+          "preCommitHooks": false,
+          "testInfra": true
         }
       },
-      "skillCount": 3,
+      "skillCount": 2,
       "categoryScores": {
         "aiConfig": {
           "earned": 0,
           "total": 7
         },
         "buildVerify": {
-          "earned": 1,
+          "earned": 0,
           "total": 2
         },
         "documentation": {
@@ -4254,10 +4319,6 @@
       },
       "level": "Novice",
       "markdownFiles": [
-        {
-          "path": "CHANGELOG.md",
-          "classification": "other"
-        },
         {
           "path": "README.md",
           "classification": "readme"
@@ -4462,67 +4523,6 @@
       "url": "https://github.com/getsentry/raven-go",
       "stars": 559,
       "language": "Go",
-      "skills": {
-        "aiConfig": {
-          "agentsMd": false,
-          "claudeMd": false,
-          "claudeDir": false,
-          "claudeSettings": false,
-          "claudeCommands": false,
-          "claudeSkills": false,
-          "cursorRulesDir": false
-        },
-        "buildVerify": {
-          "makefile": false,
-          "ciWorkflows": false
-        },
-        "documentation": {
-          "readme": true,
-          "contributing": false,
-          "additionalDocs": false
-        },
-        "codeQuality": {
-          "typeChecking": false,
-          "linter": false,
-          "formatter": false,
-          "preCommitHooks": false,
-          "testInfra": false
-        }
-      },
-      "skillCount": 1,
-      "categoryScores": {
-        "aiConfig": {
-          "earned": 0,
-          "total": 7
-        },
-        "buildVerify": {
-          "earned": 0,
-          "total": 2
-        },
-        "documentation": {
-          "earned": 1,
-          "total": 3
-        },
-        "codeQuality": {
-          "earned": 0,
-          "total": 5
-        }
-      },
-      "level": "Novice",
-      "markdownFiles": [
-        {
-          "path": "README.md",
-          "classification": "readme"
-        }
-      ]
-    },
-    {
-      "name": "docker-sentry",
-      "slug": "docker-sentry",
-      "description": "Docker Official Image packaging for Sentry",
-      "url": "https://github.com/getsentry/docker-sentry",
-      "stars": 347,
-      "language": "Python",
       "skills": {
         "aiConfig": {
           "agentsMd": false,

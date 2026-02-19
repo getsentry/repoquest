@@ -118,6 +118,43 @@ function buildFileChecks(alias: string): string {
     }
   }`);
 
+  // Monorepo support: scan packages/ to find first sub-package
+  fields.push(`${alias}_packagesTree: object(expression: "HEAD:packages") {
+    ... on Tree {
+      entries { name type }
+    }
+  }`);
+
+  // Check common monorepo nested paths for linter/test/type configs
+  // Covers JS/TS monorepos (packages/core/) and Dart/Flutter monorepos (packages/dart/, packages/flutter/)
+  const monorepoChecks = [
+    { skill: "linter", paths: [
+      "packages/core/.eslintrc.js", "packages/core/.eslintrc.json",
+      "packages/core/eslint.config.js", "packages/core/eslint.config.mjs",
+      "packages/dart/analysis_options.yaml", "packages/flutter/analysis_options.yaml",
+    ]},
+    { skill: "testInfra", paths: [
+      "packages/core/jest.config.js", "packages/core/jest.config.ts", "packages/core/vitest.config.ts",
+      "packages/dart/pubspec.yaml", "packages/flutter/pubspec.yaml",
+    ]},
+    { skill: "typeChecking", paths: [
+      "packages/core/tsconfig.json",
+      "packages/dart/analysis_options.yaml", "packages/flutter/analysis_options.yaml",
+    ]},
+    { skill: "formatter", paths: [
+      "packages/dart/analysis_options.yaml", "packages/flutter/analysis_options.yaml",
+    ]},
+  ];
+
+  for (const check of monorepoChecks) {
+    for (let i = 0; i < check.paths.length; i++) {
+      const fieldName = `${alias}_mono_${check.skill}_${i}`;
+      fields.push(
+        `${fieldName}: object(expression: "HEAD:${check.paths[i]}") { __typename }`
+      );
+    }
+  }
+
   return fields.join("\n      ");
 }
 
@@ -158,6 +195,24 @@ function parseSkillResults(
       }
     }
     skillFlags[skill.key] = found;
+  }
+
+  // Monorepo fallback: check packages/{core,dart,flutter}/ for quality configs
+  const monorepoChecks = [
+    { skill: "linter", count: 6 },
+    { skill: "testInfra", count: 5 },
+    { skill: "typeChecking", count: 3 },
+    { skill: "formatter", count: 2 },
+  ];
+  for (const check of monorepoChecks) {
+    if (skillFlags[check.skill]) continue; // already found at root
+    for (let i = 0; i < check.count; i++) {
+      const fieldName = `${alias}_mono_${check.skill}_${i}`;
+      if (repoData[fieldName] !== null) {
+        skillFlags[check.skill] = true;
+        break;
+      }
+    }
   }
 
   // Scan root tree for .md files

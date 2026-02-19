@@ -40,39 +40,38 @@ export default async function RepoDetailPage({ params }: PageProps) {
 
       {/* Header */}
       <PixelCard gold={isLegendary} sparkle={isLegendary}>
+        {/* Centered repo avatar */}
+        {imagePath && (
+          <div className="flex justify-center mb-6">
+            <div className={`h-32 w-32 sm:h-80 sm:w-80 overflow-hidden rounded border-2 ${isLegendary ? "border-rpg-gold" : "border-wood-mid"}`}>
+              <img
+                src={imagePath}
+                alt={repo.name}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        )}
+
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex gap-4">
-            {/* Repo avatar */}
-            {imagePath && (
-              <div className="flex-shrink-0">
-                <div className={`h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded border-2 ${isLegendary ? "border-rpg-gold" : "border-wood-mid"}`}>
-                  <img
-                    src={imagePath}
-                    alt={repo.name}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
+          <div>
+            <h1 className="text-base text-rpg-text mb-2">
+              {repo.name}
+            </h1>
+            {repo.description && (
+              <p className="text-sm text-rpg-muted mb-3">{repo.description}</p>
             )}
-            <div>
-              <h1 className="text-base text-rpg-text mb-2">
-                {repo.name}
-              </h1>
-              {repo.description && (
-                <p className="text-sm text-rpg-muted mb-3">{repo.description}</p>
-              )}
-              <div className="flex flex-wrap items-center gap-3 text-xs text-rpg-muted">
-                {repo.language && <span>{repo.language}</span>}
-                <span>&#11088; {repo.stars.toLocaleString()}</span>
-                <a
-                  href={repo.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-rpg-accent hover:text-rpg-gold transition-colors"
-                >
-                  View on GitHub &#8594;
-                </a>
-              </div>
+            <div className="flex flex-wrap items-center gap-3 text-xs text-rpg-muted">
+              {repo.language && <span>{repo.language}</span>}
+              <span>&#11088; {repo.stars.toLocaleString()}</span>
+              <a
+                href={repo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-rpg-accent hover:text-rpg-gold transition-colors"
+              >
+                View on GitHub &#8594;
+              </a>
             </div>
           </div>
           <div className="text-center sm:text-right">
