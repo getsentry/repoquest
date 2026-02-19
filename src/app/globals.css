@@ -1,0 +1,336 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-rpg-bg: #0f0a1a;
+  --color-rpg-panel: #1a1225;
+  --color-rpg-border: #5c3d2e;
+  --color-rpg-gold: #eab308;
+  --color-rpg-text: #e2e8f0;
+  --color-rpg-muted: #8b7a6b;
+  --color-rpg-accent: #c9a96e;
+
+  --color-wood-dark: #3b2415;
+  --color-wood-mid: #5c3d2e;
+  --color-wood-light: #8b6841;
+  --color-wood-highlight: #c9a96e;
+
+  --color-level-novice: #6b7280;
+  --color-level-apprentice: #22c55e;
+  --color-level-veteran: #3b82f6;
+  --color-level-elite: #a855f7;
+  --color-level-heroic: #f97316;
+  --color-level-legendary: #eab308;
+
+  --font-pixel: "Press Start 2P", monospace;
+  --font-body: "Inter", sans-serif;
+
+  /* Override Tailwind text sizes for pixel font */
+  /* --text-xs: 0.95rem;
+  --text-xs--line-height: 1.8;
+  --text-sm: 1.05rem;
+  --text-sm--line-height: 1.8;
+  --text-base: 1.15rem;
+  --text-base--line-height: 1.8;
+  --text-lg: 1.4rem;
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.65rem;
+  --text-xl--line-height: 1.6;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 1.4; */
+}
+
+html {
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 2;
+  color: var(--color-rpg-text);
+  background-color: var(--color-rpg-bg);
+  background-image: url("/background.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+}
+
+/* Dark overlay so content remains readable over the background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 10, 26, 0.82);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure all content sits above the overlay */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Pixel-crisp rendering */
+* {
+  text-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+}
+
+/* Wood frame border — layered box-shadows for pixel wood effect */
+.wood-frame {
+  position: relative;
+  border: 3px solid var(--color-wood-mid);
+  border-radius: 4px;
+  box-shadow:
+    /* inner border groove */
+    inset 0 0 0 1px var(--color-wood-dark),
+    inset 0 0 0 2px rgba(201, 169, 110, 0.15),
+    /* outer wood shadow */
+    0 0 0 1px var(--color-wood-dark),
+    0 0 0 3px var(--color-wood-mid),
+    0 0 0 4px var(--color-wood-dark),
+    /* ambient shadow */
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    var(--color-rpg-panel) 0%,
+    rgba(26, 18, 37, 0.95) 100%
+  );
+}
+
+.wood-frame::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    var(--color-wood-highlight) 0%,
+    var(--color-wood-mid) 25%,
+    var(--color-wood-dark) 50%,
+    var(--color-wood-mid) 75%,
+    var(--color-wood-highlight) 100%
+  );
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Gold wood frame for legendary items */
+.wood-frame-gold {
+  position: relative;
+  border: 3px solid #b8860b;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 0 1px #8b6914,
+    inset 0 0 0 2px rgba(234, 179, 8, 0.2),
+    0 0 0 1px #8b6914,
+    0 0 0 3px #b8860b,
+    0 0 0 4px #8b6914,
+    0 0 8px rgba(234, 179, 8, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 18, 37, 1) 0%,
+    rgba(30, 24, 15, 0.95) 100%
+  );
+}
+
+/* Legacy pixel border — keep for backward compat */
+.pixel-border {
+  position: relative;
+  border: 3px solid var(--color-wood-mid);
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 0 1px var(--color-wood-dark),
+    0 0 0 1px var(--color-wood-dark),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pixel-border-gold {
+  position: relative;
+  border: 3px solid #b8860b;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 0 1px #8b6914,
+    0 0 0 1px #8b6914,
+    0 0 8px rgba(234, 179, 8, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow effect for unlocked skills */
+.skill-glow {
+  filter: drop-shadow(0 0 6px currentColor);
+}
+
+/* Scanline overlay */
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0.05) 4px
+  );
+  pointer-events: none;
+}
+
+/* Logo breathe animation */
+@keyframes logo-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-logo-breathe {
+  animation: logo-breathe 3s ease-in-out infinite;
+}
+
+/* Pulse animation for legendary items */
+@keyframes legendary-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.legendary-pulse {
+  animation: legendary-pulse 2s ease-in-out infinite;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Table row entrance animation — staggered fade */
+@keyframes row-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-row-enter {
+  animation: row-enter 0.2s ease-out both;
+}
+
+/* Sparkle particle animation — used by Sparkles component */
+@keyframes sparkle-pop {
+  0% { opacity: 0; transform: scale(0); }
+  40% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 0 0 1px var(--color-wood-dark),
+    0 0 0 1px var(--color-wood-dark),
+    0 0 0 3px var(--color-wood-mid),
+    0 0 0 4px var(--color-wood-dark),
+    0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Repo image hover zoom */
+.repo-avatar {
+  transition: transform 0.3s ease;
+}
+
+.repo-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Tooltip / preview card */
+.preview-card {
+  position: absolute;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(4px);
+}
+
+.preview-trigger:hover .preview-card {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Table row hover glow */
+.table-row-hover {
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.table-row-hover:hover {
+  background-color: rgba(92, 61, 46, 0.08);
+  box-shadow: inset 3px 0 0 var(--color-wood-highlight);
+}
+
+/* Custom scrollbar (wood themed) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-rpg-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-mid);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wood-light);
+}
+
+/* Wood-style input focus */
+input:focus,
+select:focus {
+  border-color: var(--color-wood-highlight) !important;
+  box-shadow: 0 0 0 1px var(--color-wood-highlight), 0 0 8px rgba(201, 169, 110, 0.15);
+}
+
+/* Music player equalizer bars — stepped for pixel feel */
+@keyframes eq-1 {
+  0%, 100% { height: 2px; }
+  25% { height: 6px; }
+  50% { height: 10px; }
+  75% { height: 4px; }
+}
+
+@keyframes eq-2 {
+  0%, 100% { height: 8px; }
+  25% { height: 4px; }
+  50% { height: 2px; }
+  75% { height: 6px; }
+}
+
+@keyframes eq-3 {
+  0%, 100% { height: 4px; }
+  25% { height: 10px; }
+  50% { height: 6px; }
+  75% { height: 2px; }
+}
+
+.animate-eq-1 {
+  animation: eq-1 0.8s steps(4) infinite;
+}
+
+.animate-eq-2 {
+  animation: eq-2 0.6s steps(4) infinite;
+}
+
+.animate-eq-3 {
+  animation: eq-3 0.9s steps(4) infinite;
+}
