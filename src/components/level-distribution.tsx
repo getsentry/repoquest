@@ -22,7 +22,7 @@ export function LevelDistribution({ stats }: LevelDistributionProps) {
           return (
             <div key={level} className="flex items-center gap-3">
               <span
-                className="w-24 text-right text-xs"
+                className="w-48 text-right text-xs"
                 style={{ color: LEVEL_COLORS[level] }}
               >
                 {level}

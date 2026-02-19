@@ -77,7 +77,7 @@ export default function StatsPage() {
             return (
               <div key={cat.id} className="flex items-center gap-3">
                 <span
-                  className="w-24 text-right text-xs"
+                  className="w-48 text-right text-xs"
                   style={{ color: cat.color }}
                 >
                   {cat.label}

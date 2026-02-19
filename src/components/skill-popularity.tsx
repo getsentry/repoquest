@@ -34,8 +34,8 @@ export function SkillPopularity({ stats }: SkillPopularityProps) {
 
                 return (
                   <div key={skill.key} className="flex items-center gap-3">
-                    <span className="w-28 text-right text-xs text-rpg-text truncate">
-                      {skill.label}
+                    <span className="w-48 text-right text-xs text-rpg-text truncate">
+                    {skill.label}
                     </span>
                     <div className="flex-1 h-4 bg-rpg-bg overflow-hidden">
                       <div
