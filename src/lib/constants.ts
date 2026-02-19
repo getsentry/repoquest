@@ -53,7 +53,7 @@ export const CATEGORIES: CategoryDefinition[] = [
 ];
 
 export const SKILLS: SkillDefinition[] = [
-  // AI Config (5)
+  // AI Config (7)
   {
     key: "agentsMd",
     category: "aiConfig",
@@ -76,18 +76,32 @@ export const SKILLS: SkillDefinition[] = [
     description: "Claude config directory",
   },
   {
+    key: "claudeSettings",
+    category: "aiConfig",
+    label: ".claude/settings.json",
+    filePaths: [".claude/settings.json"],
+    description: "Claude Code project settings",
+  },
+  {
+    key: "claudeCommands",
+    category: "aiConfig",
+    label: ".claude/commands",
+    filePaths: [".claude/commands"],
+    description: "Claude Code custom slash commands",
+  },
+  {
+    key: "claudeSkills",
+    category: "aiConfig",
+    label: ".claude/skills",
+    filePaths: [".claude/skills"],
+    description: "Claude Code reusable skills",
+  },
+  {
     key: "cursorRulesDir",
     category: "aiConfig",
     label: ".cursor/rules/",
     filePaths: [".cursor/rules"],
     description: "Cursor rules directory",
-  },
-  {
-    key: "cursorignore",
-    category: "aiConfig",
-    label: ".cursorignore",
-    filePaths: [".cursorignore"],
-    description: "Cursor ignore file",
   },
 
   // Build & Verify (3)
@@ -226,12 +240,12 @@ export function getCategoryForSkill(key: SkillKey): CategoryDefinition {
 }
 
 export const LEVEL_THRESHOLDS: { min: number; max: number; level: Level }[] = [
-  { min: 0, max: 2, level: "Novice" },
-  { min: 3, max: 5, level: "Apprentice" },
-  { min: 6, max: 8, level: "Veteran" },
-  { min: 9, max: 11, level: "Elite" },
-  { min: 12, max: 13, level: "Heroic" },
-  { min: 14, max: 15, level: "Legendary" },
+  { min: 0, max: 3, level: "Novice" },
+  { min: 4, max: 6, level: "Apprentice" },
+  { min: 7, max: 9, level: "Veteran" },
+  { min: 10, max: 12, level: "Elite" },
+  { min: 13, max: 15, level: "Heroic" },
+  { min: 16, max: 17, level: "Legendary" },
 ];
 
 export const LEVEL_COLORS: Record<Level, string> = {
@@ -252,7 +266,7 @@ export const LEVEL_ORDER: Level[] = [
   "Legendary",
 ];
 
-export const TOTAL_SKILLS = SKILLS.length; // 15
+export const TOTAL_SKILLS = SKILLS.length; // 17
 
 export const ORG_NAME = "getsentry";
 

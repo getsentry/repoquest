@@ -17,11 +17,8 @@ export function Header() {
     <header className="border-b border-wood-mid/30 bg-rpg-panel/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-6">
-          <Link
-            href="/"
-            className="text-sm text-rpg-gold hover:text-rpg-gold/80 transition-colors"
-          >
-            <Sparkles count={3}>REPOQUEST</Sparkles>
+          <Link href="/" className="transition-opacity hover:opacity-80">
+            <img src="/logo.png" alt="RepoQuest" className="h-8" />
           </Link>
           <nav className="flex gap-4">
             <Link

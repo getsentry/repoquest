@@ -203,8 +203,10 @@ function parseSkillResults(
       agentsMd: skillFlags.agentsMd ?? false,
       claudeMd: skillFlags.claudeMd ?? false,
       claudeDir: skillFlags.claudeDir ?? false,
+      claudeSettings: skillFlags.claudeSettings ?? false,
+      claudeCommands: skillFlags.claudeCommands ?? false,
+      claudeSkills: skillFlags.claudeSkills ?? false,
       cursorRulesDir: skillFlags.cursorRulesDir ?? false,
-      cursorignore: skillFlags.cursorignore ?? false,
     },
     buildVerify: {
       makefile: skillFlags.makefile ?? false,
@@ -231,7 +233,8 @@ function createEmptySkillSet(): SkillSet {
   return {
     aiConfig: {
       agentsMd: false, claudeMd: false, claudeDir: false,
-      cursorRulesDir: false, cursorignore: false,
+      claudeSettings: false, claudeCommands: false, claudeSkills: false,
+      cursorRulesDir: false,
     },
     buildVerify: {
       makefile: false, ciWorkflows: false,
@@ -293,7 +296,7 @@ async function checkFilesForBatch(
 async function main() {
   const repoNodes = await fetchAllRepos();
 
-  console.log("\nChecking files across 4 categories (15 skills) + scanning .md files...");
+  console.log("\nChecking files across 4 categories (17 skills) + scanning .md files...");
 
   const allResults = new Map<string, { skills: SkillSet; markdownFiles: MarkdownFile[] }>();
   const batchSize = 3;

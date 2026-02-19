@@ -8,13 +8,15 @@ export type Level =
 
 export type CategoryId = "aiConfig" | "buildVerify" | "documentation" | "codeQuality";
 
-// AI Config skills (5)
+// AI Config skills (7)
 export interface AIConfigSkills {
   agentsMd: boolean;
   claudeMd: boolean;
   claudeDir: boolean;
+  claudeSettings: boolean;
+  claudeCommands: boolean;
+  claudeSkills: boolean;
   cursorRulesDir: boolean;
-  cursorignore: boolean;
 }
 
 // Build & Verify skills (2)

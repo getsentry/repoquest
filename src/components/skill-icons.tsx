@@ -62,13 +62,35 @@ function CursorRulesDirIcon({ x, y, color, size = 18 }: IconProps) {
   );
 }
 
-function CursorignoreIcon({ x, y, color, size = 18 }: IconProps) {
+function ClaudeSettingsIcon({ x, y, color, size = 18 }: IconProps) {
   const s = size / 18;
   return (
     <g transform={`translate(${x - 9 * s}, ${y - 9 * s}) scale(${s})`}>
-      <path d={`M4,2 L4,11 L6,9 L9,13 L10.5,12 L7.5,8 L10,8 Z`} fill={color} opacity={0.3} stroke={color} strokeWidth={1} strokeLinejoin="round" />
-      <circle cx={12} cy={12} r={5} fill="none" stroke={color} strokeWidth={1.5} opacity={0.8} />
-      <line x1={8.5} y1={15.5} x2={15.5} y2={8.5} stroke={color} strokeWidth={1.5} opacity={0.8} />
+      <rect x={3} y={2} width={12} height={14} rx={1} fill={color} opacity={0.15} stroke={color} strokeWidth={1.3} />
+      <text x={9} y={8} textAnchor="middle" fill={color} fontSize="5" fontWeight="bold">{"{ }"}</text>
+      <path d={`M9,11 L9.5,12.5 L11,13 L9.5,13.5 L9,15 L8.5,13.5 L7,13 L8.5,12.5 Z`} fill={color} opacity={0.8} />
+    </g>
+  );
+}
+
+function ClaudeCommandsIcon({ x, y, color, size = 18 }: IconProps) {
+  const s = size / 18;
+  return (
+    <g transform={`translate(${x - 9 * s}, ${y - 9 * s}) scale(${s})`}>
+      <rect x={2} y={2} width={14} height={14} rx={1} fill={color} opacity={0.15} stroke={color} strokeWidth={1.3} />
+      <text x={5} y={11} fill={color} fontSize="7" fontWeight="bold">/</text>
+      <line x1={10} y1={10} x2={14} y2={10} stroke={color} strokeWidth={1.2} opacity={0.6} />
+      <line x1={10} y1={7} x2={13} y2={7} stroke={color} strokeWidth={1.2} opacity={0.6} />
+    </g>
+  );
+}
+
+function ClaudeSkillsIcon({ x, y, color, size = 18 }: IconProps) {
+  const s = size / 18;
+  return (
+    <g transform={`translate(${x - 9 * s}, ${y - 9 * s}) scale(${s})`}>
+      <polygon points="9,1 11,7 17,7 12,11 14,17 9,13 4,17 6,11 1,7 7,7" fill={color} opacity={0.2} stroke={color} strokeWidth={1.3} strokeLinejoin="round" />
+      <path d={`M9,6 L9.4,7.5 L11,7.8 L9.6,8.5 L9.8,10 L9,9 L8.2,10 L8.4,8.5 L7,7.8 L8.6,7.5 Z`} fill={color} opacity={0.8} />
     </g>
   );
 }
@@ -226,8 +248,10 @@ const SKILL_ICON_MAP: Record<SkillKey, React.FC<IconProps>> = {
   agentsMd: AgentsIcon,
   claudeMd: ClaudeMdIcon,
   claudeDir: ClaudeDirIcon,
+  claudeSettings: ClaudeSettingsIcon,
+  claudeCommands: ClaudeCommandsIcon,
+  claudeSkills: ClaudeSkillsIcon,
   cursorRulesDir: CursorRulesDirIcon,
-  cursorignore: CursorignoreIcon,
   // Build & Verify
   makefile: MakefileIcon,
   ciWorkflows: CiWorkflowsIcon,

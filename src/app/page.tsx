@@ -89,7 +89,7 @@ export default function HomePage() {
           className="mx-auto mb-4 h-96 animate-logo-breathe"
         />
         <p className="text-sm text-rpg-muted">
-          Tracking 15 AI readiness signals across getsentry repos
+          Tracking 17 AI readiness signals across getsentry repos
         </p>
       </div>
 

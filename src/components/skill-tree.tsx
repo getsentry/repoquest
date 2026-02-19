@@ -22,14 +22,16 @@ interface NodeLayout {
 function getAIConfigLayout(w: number): { nodes: NodeLayout[]; connections: [number, number][] } {
   const cx = w / 2;
   const nodes: NodeLayout[] = [
-    { key: "agentsMd", x: cx, y: 30 },
-    { key: "claudeMd", x: cx - 100, y: 80 },
-    { key: "cursorRulesDir", x: cx + 100, y: 80 },
-    { key: "claudeDir", x: cx - 100, y: 130 },
-    { key: "cursorignore", x: cx + 100, y: 130 },
+    { key: "agentsMd", x: cx, y: 35 },
+    { key: "claudeMd", x: cx - 120, y: 105 },
+    { key: "cursorRulesDir", x: cx + 120, y: 105 },
+    { key: "claudeDir", x: cx - 120, y: 175 },
+    { key: "claudeCommands", x: cx - 200, y: 245 },
+    { key: "claudeSkills", x: cx - 120, y: 245 },
+    { key: "claudeSettings", x: cx - 40, y: 245 },
   ];
   const connections: [number, number][] = [
-    [0, 1], [0, 2], [1, 3], [2, 4],
+    [0, 1], [0, 2], [1, 3], [3, 4], [3, 5], [3, 6],
   ];
   return { nodes, connections };
 }
@@ -83,7 +85,7 @@ export function SkillTree({ skills, size = "lg" }: SkillTreeProps) {
     height: number;
     yOffset: number;
   }[] = [
-    { category: "aiConfig", label: "AI Config", color: "#818cf8", nodes: aiLayout.nodes, connections: aiLayout.connections, height: 170, yOffset: 0 },
+    { category: "aiConfig", label: "AI Config", color: "#818cf8", nodes: aiLayout.nodes, connections: aiLayout.connections, height: 310, yOffset: 0 },
     { category: "buildVerify", label: "Build & Verify", color: "#f472b6", nodes: buildLayout.nodes, connections: buildLayout.connections, height: 80, yOffset: 0 },
     { category: "documentation", label: "Documentation", color: "#34d399", nodes: docsLayout.nodes, connections: docsLayout.connections, height: 80, yOffset: 0 },
     { category: "codeQuality", label: "Code Quality", color: "#fbbf24", nodes: qualityLayout.nodes, connections: qualityLayout.connections, height: 80, yOffset: 0 },
@@ -105,7 +107,7 @@ export function SkillTree({ skills, size = "lg" }: SkillTreeProps) {
   );
 
   return (
-    <svg viewBox={viewBox} className="w-full" style={{ maxHeight: isLarge ? totalHeight : totalHeight * 0.6 }}>
+    <svg viewBox={viewBox} className="w-full">
       {sections.map((section) => (
         <g key={section.category} transform={`translate(0, ${section.yOffset})`}>
           {/* Category label */}
@@ -191,7 +193,7 @@ export function CategoryTree({ categoryId, skills }: CategoryTreeProps) {
 
   if (categoryId === "aiConfig") {
     layout = getAIConfigLayout(w);
-    height = 170;
+    height = 310;
   } else {
     layout = getChainLayout(categoryId, w, 35);
     height = 85;
@@ -202,7 +204,7 @@ export function CategoryTree({ categoryId, skills }: CategoryTreeProps) {
   );
 
   return (
-    <svg viewBox={`0 0 ${w} ${height}`} className="w-full" style={{ maxHeight: height }}>
+    <svg viewBox={`0 0 ${w} ${height}`} className="w-full">
       {layout.connections.map(([from, to], i) => {
         const fromNode = layout.nodes[from];
         const toNode = layout.nodes[to];

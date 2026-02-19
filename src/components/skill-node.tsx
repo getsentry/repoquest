@@ -71,7 +71,7 @@ export function SkillNode({ label, skillKey, unlocked, x, y, accentColor = "#818
         fontSize="8"
         fontFamily="var(--font-pixel)"
       >
-        {label}
+        {label.includes("/") ? label.split("/").filter(Boolean).pop() : label}
       </text>
     </g>
   );

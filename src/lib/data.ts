@@ -54,7 +54,7 @@ export function getOrgStats(): OrgStats {
 
   return {
     totalRepos: repos.length,
-    reposWithAnySkill: repos.filter((r) => r.skillCount > 0).length,
+    reposWithAnySkill: repos.filter((r) => r.categoryScores.aiConfig.earned > 0).length,
     averageSkillCount: repos.length > 0 ? totalSkills / repos.length : 0,
     legendaryCount: repos.filter((r) => r.level === "Legendary").length,
     levelDistribution,

@@ -36,12 +36,20 @@ function getPromptForSkill(skillKey: SkillKey, repo: Repository): string | null 
 - Testing guidelines
 - Common operations and workflows`,
 
-    cursorignore: `Create a .cursorignore file for the ${name} repository (${lang}). This file should exclude from Cursor AI indexing:
-- Build output directories
-- Node modules / dependency directories
-- Generated files
-- Large binary files
-- Sensitive configuration files`,
+    claudeSettings: `Create a .claude/settings.json file for the ${name} repository (${lang}). This file should configure Claude Code project settings, including:
+- Allowed and denied tools/permissions
+- Project-specific preferences
+- Custom instructions or references`,
+
+    claudeCommands: `Create a .claude/commands/ directory for the ${name} repository (${lang}). Add custom slash commands as markdown files, for example:
+- .claude/commands/test.md — Run the test suite with common flags
+- .claude/commands/lint-fix.md — Run linter and auto-fix issues
+- .claude/commands/deploy.md — Steps to deploy the project`,
+
+    claudeSkills: `Create a .claude/skills/ directory for the ${name} repository (${lang}). Add reusable skill files that Claude can invoke, for example:
+- .claude/skills/debug.md — Debugging workflow for common issues
+- .claude/skills/review.md — Code review checklist and patterns
+- .claude/skills/refactor.md — Refactoring guidelines and patterns`,
 
     makefile: `Create a Makefile for the ${name} repository (${lang}). Include targets for:
 - \`make setup\` - Install dependencies and set up the development environment

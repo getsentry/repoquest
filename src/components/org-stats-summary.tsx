@@ -24,11 +24,14 @@ export function OrgStatsSummary({ stats }: OrgStatsSummaryProps) {
           </div>
         </PixelCard>
         <PixelCard hover>
-          <div className="text-center">
+          <div className="preview-trigger relative text-center">
             <div className="text-lg text-rpg-accent">
               {stats.reposWithAnySkill}
             </div>
-            <div className="mt-1 text-xs text-rpg-muted">Questing</div>
+            <div className="mt-1 text-xs text-rpg-muted">AI Ready</div>
+            <div className="preview-card left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 rounded bg-rpg-panel border border-wood-mid p-2 text-[10px] text-rpg-muted leading-relaxed text-left">
+              Repos with at least one AI config skill (AGENTS.md, CLAUDE.md, .claude/, etc.)
+            </div>
           </div>
         </PixelCard>
         <PixelCard hover sparkle>
@@ -40,11 +43,14 @@ export function OrgStatsSummary({ stats }: OrgStatsSummaryProps) {
           </div>
         </PixelCard>
         <PixelCard hover>
-          <div className="text-center">
+          <div className="preview-trigger relative text-center">
             <div className="text-lg text-level-veteran">
               {pctWithSkill}%
             </div>
-            <div className="mt-1 text-xs text-rpg-muted">Adoption</div>
+            <div className="mt-1 text-xs text-rpg-muted">AI Adoption</div>
+            <div className="preview-card left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 rounded bg-rpg-panel border border-wood-mid p-2 text-[10px] text-rpg-muted leading-relaxed text-left">
+              Percentage of repos with at least one AI config skill
+            </div>
           </div>
         </PixelCard>
       </div>

@@ -20,7 +20,7 @@ export default function StatsPage() {
           <Sparkles count={4}>Stats Dashboard</Sparkles>
         </h1>
         <p className="text-sm text-rpg-muted">
-          RepoQuest metrics across 4 categories, 15 skills
+          RepoQuest metrics across 4 categories, 17 skills
         </p>
       </div>
 
@@ -43,11 +43,14 @@ export default function StatsPage() {
           </div>
         </PixelCard>
         <PixelCard hover>
-          <div className="text-center">
+          <div className="preview-trigger relative text-center">
             <div className="text-lg text-level-veteran">
               {pctWithSkill}%
             </div>
-            <div className="mt-1 text-xs text-rpg-muted">Has AI Files</div>
+            <div className="mt-1 text-xs text-rpg-muted">AI Adoption</div>
+            <div className="preview-card left-1/2 -translate-x-1/2 bottom-full mb-2 w-48 rounded bg-rpg-panel border border-wood-mid p-2 text-[10px] text-rpg-muted leading-relaxed text-left">
+              Percentage of repos with at least one AI config skill
+            </div>
           </div>
         </PixelCard>
         <PixelCard hover sparkle>
