@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T13:00:37.781Z",
+  "lastUpdated": "2026-02-20T15:35:42.795Z",
   "orgName": "getsentry",
   "repositories": [
     {
@@ -7,7 +7,7 @@
       "slug": "sentry",
       "description": "Developer-first error tracking and performance monitoring",
       "url": "https://github.com/getsentry/sentry",
-      "stars": 43173,
+      "stars": 43182,
       "language": "Python",
       "skills": {
         "aiConfig": {
@@ -157,7 +157,7 @@
       "slug": "sentry-java",
       "description": "A Sentry SDK for Java, Android and other JVM languages.",
       "url": "https://github.com/getsentry/sentry-java",
-      "stars": 1296,
+      "stars": 1297,
       "language": "Kotlin",
       "skills": {
         "aiConfig": {
@@ -327,7 +327,7 @@
       "slug": "sentry-javascript",
       "description": "Official Sentry SDKs for JavaScript",
       "url": "https://github.com/getsentry/sentry-javascript",
-      "stars": 8586,
+      "stars": 8587,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -460,7 +460,7 @@
       "slug": "sentry-react-native",
       "description": "Official Sentry SDK for React Native",
       "url": "https://github.com/getsentry/sentry-react-native",
-      "stars": 1765,
+      "stars": 1766,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -707,7 +707,7 @@
       "slug": "xcodebuildmcp",
       "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
       "url": "https://github.com/getsentry/XcodeBuildMCP",
-      "stars": 4354,
+      "stars": 4365,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -1022,7 +1022,7 @@
       "slug": "sentry-mcp",
       "description": "An MCP server for interacting with Sentry via LLMs.",
       "url": "https://github.com/getsentry/sentry-mcp",
-      "stars": 559,
+      "stars": 561,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -1479,7 +1479,7 @@
       "slug": "craft",
       "description": "The universal Sentry release CLI  🚀",
       "url": "https://github.com/getsentry/craft",
-      "stars": 168,
+      "stars": 169,
       "language": "TypeScript",
       "skills": {
         "aiConfig": {
@@ -1828,7 +1828,7 @@
       "slug": "skills",
       "description": "Agent Skills used by the Sentry team for development.",
       "url": "https://github.com/getsentry/skills",
-      "stars": 271,
+      "stars": 272,
       "language": "Python",
       "skills": {
         "aiConfig": {
@@ -1978,11 +1978,80 @@
       ]
     },
     {
+      "name": "launchpad",
+      "slug": "launchpad",
+      "description": null,
+      "url": "https://github.com/getsentry/launchpad",
+      "stars": 8,
+      "language": "Python",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": true,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": true
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": true
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 8,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 2,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 2,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Veteran",
+      "markdownFiles": [
+        {
+          "path": "CLAUDE.md",
+          "classification": "ai-config"
+        },
+        {
+          "path": "DEVELOPMENT.md",
+          "classification": "docs"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
       "name": "sentry-dotnet",
       "slug": "sentry-dotnet",
       "description": "Sentry SDK for .NET",
       "url": "https://github.com/getsentry/sentry-dotnet",
-      "stars": 740,
+      "stars": 741,
       "language": "C#",
       "skills": {
         "aiConfig": {
@@ -3121,6 +3190,71 @@
       ]
     },
     {
+      "name": "sentry-infra-tools",
+      "slug": "sentry-infra-tools",
+      "description": "Standalone repo for sentry-kube and other related tools",
+      "url": "https://github.com/getsentry/sentry-infra-tools",
+      "stars": 8,
+      "language": "Python",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": true,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": true,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 6,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 2,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 3,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
       "name": "sentry-laravel",
       "slug": "sentry-laravel",
       "description": "The official Laravel SDK for Sentry (sentry.io)",
@@ -3194,7 +3328,7 @@
       "slug": "sentry-ruby",
       "description": "Sentry SDK for Ruby",
       "url": "https://github.com/getsentry/sentry-ruby",
-      "stars": 980,
+      "stars": 981,
       "language": "Ruby",
       "skills": {
         "aiConfig": {
@@ -3961,7 +4095,7 @@
       "slug": "sentry-fastlane-plugin",
       "description": "Official fastlane plugin for Sentry",
       "url": "https://github.com/getsentry/sentry-fastlane-plugin",
-      "stars": 149,
+      "stars": 150,
       "language": "Ruby",
       "skills": {
         "aiConfig": {
@@ -4028,6 +4162,71 @@
       "url": "https://github.com/getsentry/sentry-clj",
       "stars": 118,
       "language": "Clojure",
+      "skills": {
+        "aiConfig": {
+          "agentsMd": false,
+          "claudeMd": false,
+          "claudeDir": false,
+          "claudeSettings": false,
+          "claudeCommands": false,
+          "claudeSkills": false,
+          "cursorRulesDir": false
+        },
+        "buildVerify": {
+          "makefile": false,
+          "ciWorkflows": true
+        },
+        "documentation": {
+          "readme": true,
+          "contributing": false,
+          "additionalDocs": false
+        },
+        "codeQuality": {
+          "typeChecking": false,
+          "linter": false,
+          "formatter": false,
+          "preCommitHooks": true,
+          "testInfra": true
+        }
+      },
+      "skillCount": 4,
+      "categoryScores": {
+        "aiConfig": {
+          "earned": 0,
+          "total": 7
+        },
+        "buildVerify": {
+          "earned": 1,
+          "total": 2
+        },
+        "documentation": {
+          "earned": 1,
+          "total": 3
+        },
+        "codeQuality": {
+          "earned": 2,
+          "total": 5
+        }
+      },
+      "level": "Apprentice",
+      "markdownFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "classification": "other"
+        },
+        {
+          "path": "README.md",
+          "classification": "readme"
+        }
+      ]
+    },
+    {
+      "name": "skrooge",
+      "slug": "skrooge",
+      "description": "A quick and dirty kubernetes cost estimator",
+      "url": "https://github.com/getsentry/skrooge",
+      "stars": 7,
+      "language": "Python",
       "skills": {
         "aiConfig": {
           "agentsMd": false,
